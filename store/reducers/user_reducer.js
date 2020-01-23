@@ -1,1 +1,6 @@
-export default function(state=null, action){}
+export default function(state=null, action){
+    switch(action.type){
+        default:
+            return state;
+    }
+}
