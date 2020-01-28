@@ -13,7 +13,7 @@ class MyApp extends App {
         return(
             <Provider store={reduxStore}>
                 <MainLayout >
-                    <Component {...pageProps}/>
+                    {/*<Component {...pageProps}/>*/}
                 </MainLayout>
             </Provider>
         )

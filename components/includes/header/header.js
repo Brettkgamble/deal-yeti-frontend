@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <>
             <header>
-                <div className={classes.wrapper}>
-                    <img src="/static/images/retired.jpg" />
+                <div className={classes.mainImg}>
+                    {/*<img src="/static/images/home.jpg" />*/}
                 </div>
             </header>
         </>

@@ -12,3 +12,17 @@ header .wrapper {
     left: 0;
     -webkit-overflow-scrolling: touch;
 }
+.mainImg {
+    min-height: 100vh;
+    background-image: url("/static/images/home.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 375px) {
+    .mainImg {
+        min-height: 100vh;
+        background-image: url("/static/images/home.jpg");
+        background-position: 5%;
+    }
+}
+
