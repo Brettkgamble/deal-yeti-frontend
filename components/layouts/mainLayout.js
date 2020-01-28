@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../includes/header';
+import Header from '../includes/header/header';
 import Head from 'next/head';
 
 const MainLayout = (props) => (
