@@ -1,23 +1,31 @@
-import App, {Container} from "next/app";
-import React from 'react';
-import WithReduxStore from '../lib/with-redux-store';
-import { Provider } from 'react-redux';
-
+import React from 'react'
+import App from 'next/app';
+import getConfig from 'next/config';
 import MainLayout from "../components/layouts/mainLayout";
 
+const { publicRuntimeConfig } = getConfig();
+
 class MyApp extends App {
-    render() {
 
-        const { Component, pageProps, reduxStore } = this.props;
+  static async getInitialProps(appContext) {
 
-        return(
-            <Provider store={reduxStore}>
-                <MainLayout >
-                    {/*<Component {...pageProps}/>*/}
-                </MainLayout>
-            </Provider>
-        )
-    }
+    // calls page's `getInitialProps` and fills `appProps.pageProps`
+    const appProps = await App.getInitialProps(appContext);
+
+    let baseUrl = publicRuntimeConfig.base_url;
+
+    return { ...appProps, baseUrl}
+  }
+
+  render() {
+    const { baseUrl } = this.props;
+
+    return (
+          <MainLayout
+           baseUrl = {baseUrl}>
+          </MainLayout>
+    )
+  }
 }
 
-export default WithReduxStore(MyApp);
+export default MyApp;
