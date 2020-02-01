@@ -36,7 +36,7 @@
     }
 
     .mainHeaderLogo {
-        background: url(https://www.barbellabox.com/wp-content/uploads/2017/05/barbellabox_logo-1.png);
+        background: url('/static/images/logo.png');
         height: 60px;
         background-repeat: no-repeat;
 
