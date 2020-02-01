@@ -7,20 +7,20 @@ const Header = () => {
         <>
             <header>
                 <div className={classes.mainHeader}>
-                    <div className={[classes.container, classes.menuContainer].join(' ')}>
-                        <div className={classes.logoContainer}>
-                            <span className={classes.logoHelper}></span>
+                    <div className={[classes.container, classes.mainHeaderContainer].join(' ')}>
+                        <div className={classes.mainHeaderLogoContainer}>
+                            <span className={classes.mainHeaderLogoHelper}></span>
                             <Link href="/">
                                 <a>
-                                    <div className={classes.logo}>
+                                    <div className={classes.mainHeaderLogo}>
                                     </div>
                                 </a>
                             </Link>
                         </div>
                         <div className={classes.topNavigation}>
                             <nav>
-                                <ul>
-                                    <li>
+                                <ul className={classes.mainNavItems}>
+                                    <li className={classes.mainNavItem}>
                                         <a href="/">Packages</a>
                                     </li>
                                     <li>

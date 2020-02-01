@@ -7,9 +7,10 @@
         box-shadow: 0 1px 0 rgba(0,0,0,.1);
         font-weight: 500;
         line-height: 23px;
+        margin: 0;
     }
 
-    .container {
+    .mainHeaderContainer {
         position: relative;
         text-align: left;
         width: 80%;
@@ -21,20 +22,20 @@
         z-index: 99;
     }
 
-    .logoContainer {
+    .mainHeaderLogoContainer {
         position:absolute;
         width: 100%;
         width: 100%;
     }
 
-    .logoHelper {
+    .mainHeaderLogoHelper {
         display: inline-block;
         width: 0;
         height: 100%;
         vertical-align: middle;
     }
 
-    .logo {
+    .mainHeaderLogo {
         background: url(https://www.barbellabox.com/wp-content/uploads/2017/05/barbellabox_logo-1.png);
         height: 60px;
         background-repeat: no-repeat;
@@ -45,5 +46,13 @@
         padding-left: 152px;
         display: block;
         padding-top: 24px;
+    }
+
+    .mainNavItems {
+
+    }
+
+    .mainNavItem {
+        display: inline-block;
     }
 }
