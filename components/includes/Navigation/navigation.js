@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import classes from './header.module.css';
+import classes from './navigation.module.css';
 
-const Header = () => {
+const Navigation = () => {
     return (
         <>
             <header>
@@ -17,8 +17,8 @@ const Header = () => {
                                 </a>
                             </Link>
                         </div>
-                        <div className={classes.topNavigation}>
-                            <nav>
+                        <div className={classes.mobileTopNavigation}>
+                            <div>
                                 <ul className={classes.mainNavItems}>
                                     <li className={classes.mainNavItem}>
                                         <a href="/">Packages</a>
@@ -33,7 +33,7 @@ const Header = () => {
                                         <a href="/">Login</a>
                                     </li>
                                 </ul>
-                            </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -42,4 +42,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Navigation;

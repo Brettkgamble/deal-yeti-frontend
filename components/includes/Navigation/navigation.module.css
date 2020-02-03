@@ -42,17 +42,35 @@
 
     }
 
-    .topNavigation {
-        padding-left: 152px;
+    .mobileTopNavigation {
         display: block;
-        padding-top: 24px;
+        float: right;
+    }
+
+    .mobileNavClosed {
+
+    }
+
+    .mobileMenuBar {
+        display: block;
+        position: relative;
+        line-height: 0;
+        padding-bottom: 24px;
     }
 
     .mainNavItems {
-
+        display: none;
+        float: left;
+        line-height: 0;
+        list-style: none;
     }
 
     .mainNavItem {
         display: inline-block;
+        padding-right: 22px;
+        font-size:14px;
+        word-wrap: break-word;
+        position: relative;
+        line-height: 1em;
     }
 }

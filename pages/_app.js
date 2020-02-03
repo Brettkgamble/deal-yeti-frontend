@@ -6,7 +6,6 @@ import MainLayout from "../components/layouts/mainLayout";
 const { publicRuntimeConfig } = getConfig();
 
 class MyApp extends App {
-
   static async getInitialProps(appContext) {
 
     // calls page's `getInitialProps` and fills `appProps.pageProps`
@@ -17,7 +16,7 @@ class MyApp extends App {
     return { ...appProps, baseUrl}
   }
 
-  render() {
+   render() {
     const { baseUrl } = this.props;
 
     return (
