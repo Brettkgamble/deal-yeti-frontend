@@ -14,7 +14,7 @@
 }
 .mainImg {
     min-height: 100vh;
-    background-image: url("/static/images/home.jpg");
+    background-image: url("/static/images/red_car.png");
     background-size: 100% 100%;
     /*background-repeat: no-repeat;*/
     /*width: 100%;*/
@@ -24,16 +24,16 @@
 @media (max-width: 375px) {
     .mainImg {
         min-height: 100vh;
-        background-image: url("/static/images/home.jpg");
+        background-image: url("/static/images/red_car.png");
         background-position: 5%;
-        background-size: auto;
+        background-size: cover;
     }
 }
 
 @media (min-width:376px) and (max-width: 1024px) {
     .mainImg {
         min-height: 100vh;
-        background-image: url("/static/images/home.jpg");
+        background-image: url("/static/images/red_car.png");
         background-position: 5%;
         background-size: auto;
     }

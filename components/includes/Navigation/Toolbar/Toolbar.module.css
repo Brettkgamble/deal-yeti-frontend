@@ -19,7 +19,7 @@
 }
 
 .toolbarLogo a {
-    background: url('/static/images/logo.png');
+    /*background: url('/static/images/logo.png');*/
     height: 60px;
     background-repeat: no-repeat;
     text-decoration: none;
